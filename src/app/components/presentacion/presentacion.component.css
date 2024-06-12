@@ -1,0 +1,147 @@
+body {
+    background-image: url('../../../assets/img/fondo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos generales para los contenedores */
+  .contenedor {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-foto {
+    text-align: center;
+  }
+  
+  .contenedor-acerca-de-mi,
+  .contenedor-proyectos,
+  .contenedor-exp {
+    text-align: left;
+  }
+  
+  .descripcion {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  a img {
+    border-radius: 8px;
+  }
+  
+  /* Estilos para proyectos */
+  .contenedor-proyectos img {
+    margin: 10px;
+  }
+  
+  /* Espacio en blanco */
+  .espacio-en-blanco {
+    height: 50px;
+  }
+  
+  /* Contenedor de proyectos y experiencia */
+  .contenedor-py,
+  .contenedor-pbi,
+  .contenedor-exp1,
+  .contenedor-exp2 {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos específicos para tamaños de pantalla pequeños */
+  @media (max-width: 768px) {
+    .contenedor {
+      margin: 10px;
+      padding: 20px;
+    }
+  
+    .contenedor-acerca-de-mi,
+    .contenedor-proyectos,
+    .contenedor-exp {
+      width: auto;
+      height: auto;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Estilos específicos para tamaños de pantalla medianos */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor-acerca-de-mi,
+    .contenedor-proyectos,
+    .contenedor-exp {
+      width: 90%;
+    }
+  }
+  
+  /* Estilos específicos para tamaños de pantalla grandes */
+  @media (min-width: 1025px) {
+    .contenedor-acerca-de-mi {
+      width: 800px;
+    }
+  
+    .contenedor-proyectos {
+      width: 430px;
+    }
+  
+    .contenedor-exp {
+      width: 755px;
+    }
+  }
+  
+  /* Layout general para el contenido */
+  .layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Ajustes para el contenido */
+  .contenedor-foto,
+  .contenedor-acerca-de-mi,
+  .contenedor-proyectos,
+  .contenedor-exp {
+    box-sizing: border-box;
+  }
+  
+  /* Ajustes para los contenedores de proyectos y experiencia */
+  .contenedor-py,
+  .contenedor-pbi {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 45%;
+    box-sizing: border-box;
+  }
+  
+  .contenedor-exp1,
+  .contenedor-exp2 {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
