@@ -1,86 +1,125 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portafolio</title>
-</head>
-<body>
-    <div class="layout">
-        <div class="contenedor contenedor-foto">
-            <img src="assets/img/foto-perfil.jpg" alt="Foto de perfil">
-            <p class="descripcion"><strong>Javier Esteban Duque Guevara</strong><br>Analista de Datos</p>
-        </div>
-        <div class="contenedor contenedor-acerca-de-mi">
-            <h1>Perfil Profesional</h1>
-            <p>Tecnólogo en Sistematización de Datos y estudiante de Ingeniería en Telemática (último semestre) con experiencia en análisis de datos, desarrollo de reportes, automatización de procesos y creación de dashboards en Power BI y Qlik. Manejo de Python, SQL, Git y desarrollo web con Django, incluyendo aplicaciones para web scraping y gestión de datos.</p>
-            <p>Experiencia en el uso de modelos de lenguaje (LLMs) con Ollama y Llama 2B para clasificación de información. Me caracterizo por habilidades en comunicación asertiva, trabajo en equipo, adaptabilidad y resolución de problemas, orientado siempre a la mejora continua y a la optimización de procesos con soluciones basadas en datos.</p>
-        </div>
-        <div class="contenedor contenedor-proyectos">
-            <h1>Proyectos</h1>
-            <div class="contenedor-py">
-                <a href="https://drive.google.com/drive/folders/1qC6at_miVL7BZmUDfgr1u4kYHsRMJ9hL?usp=drive_link" target="_blank">
-                <img src="assets/img/Python.png" alt="Python" width="100" height="100">
-                <p class="descripcion">Python</p></a>
-            </div>
-            <div class="contenedor-pbi">
-                <a href="https://1drv.ms/f/s!Arj2TaZpXgohiX724MXSvdD9fFSB?e=RSY1eF" target="_blank">
-                <img src="assets/img/Power_BI.png" alt="Power BI" width="100" height="100">
-                <p class="descripcion">Power BI</p></a>
-            </div>
-            <div class="contenedor-git">
-                <a href="https://github.com/EstebanDuque123" target="_blank">
-                <img src="assets/img/github.png" alt="GitHub" width="100" height="100">
-                <p class="descripcion">GitHub</p></a>
-            </div>
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="logo">Javier Duque Analista de Datos</div>
+    <ul class="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Perfil</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
 
-        </div>
-        <div class="contenedor contenedor-exp">
-            <h1>Experiencia</h1>
-                        <div class="contenedor-exp1">
-                <h3 class="job-title">Analista de Medios</h3>
-                <p class="job-company">Infolaft SAS</p>
-                <p class="job-period">Noviembre 2024 - Actualidad</p>
-                <p>• Extracción y transformación de datos para análisis de listas restrictivas.</p>
-                <p>• Generación de reportes e informes sobre hallazgos y ampliaciones de listas, incluyendo la creación de un nuevo reporte especializado entregado a un cliente, mejorando la calidad del análisis externo.</p>
-                <p>• Desarrollo de una aplicación web en Django para ejecutar procesos de automatización de listas mediante web scraping, integrando y gestionando flujos de carga de datos.</p>
-                <p>• Uso de Git para clonar repositorios, versionar código y subir cambios a repositorios remotos.</p>
-                <p>• Implementación de un clasificador de nombres usando la API de Ollama y el modelo Llama 2B, donde a través de Python se enviaba el campo nombre de una columna, se procesaba con el modelo y se almacenaba la respuesta en una nueva columna.</p>
-                <p>• Automatización de listas usando Python para optimizar la actualización y consolidación de información.</p>
-                <p>• Depuración y mantenimiento de bases de datos en SQL, mejorando integridad y consistencia de datos.</p>
-            </div>
-            <div class="contenedor-exp1">
-                <h3>Practicante FACISO</h3>
-                <p>Universidad de los Andes.<br>Agosto 2023 - Marzo 2024.</p>
-                <p>Normalización de números antiguos de revistas usando InDesign y Marcación de revista para repositorio Scielo usando etiquetas XML.</p>
-            </div>
-            <div class="contenedor-exp2">
-                <h3>Practicante Área de Medición</h3>
-                <p>Frontera Energy<br>Ago 2020 - Feb 2021.</p>
-                <p>Consolidar la información de medición requerida desde distintos campos, asegurándome de actualizarla en las carpetas compartidas y archivos del área. Además, llevaba a cabo un seguimiento constante para garantizar la actualización mensual de esta información por parte de los campos involucrados.</p>
-            </div>
-        </div>
+<!-- Hero Section -->
+<section id="home" class="hero visible">
+  <div class="container">
+    <img src="assets/img/foto-perfil.jpg" alt="Foto de perfil" class="profile-img">
+    <h1>Javier Esteban Duque Guevara</h1>
+    <h3>esteban_duque159&#64;hotmail.com</h3>
+    <br>
+    <div class="subtitle">
+      <span class="typing-text" id="typing-text">Analista de Datos</span>
     </div>
-    <footer>
-        <div class="footer-content">
-            <p><strong>Contáctame</strong></p>
-            <p>Email: Esteban_duque159&#64;hotmail.com</p>
-            <p>Celular: +57 311 814 4673</p>
-            <div class="centrar">
-                
-                <a href="https://www.linkedin.com/in/javier-duque-g/" target="_blank">
-                    <img src="assets/img/linkedin.png" alt="LinkedIn" width="100" height="30">
-                </a>
-                &emsp;
-                <a href="https://github.com/EstebanDuque123" target="_blank">
-                    <img src="assets/img/github.png" alt="GitHub" width="50" height="50">
-                </a>
-                &emsp;
-                <a href="mailto:Esteban_duque159@hotmail.com">
-                    <img src="assets/img/correo.png" alt="Correo" width="50" height="50">
-                </a>
-            </div>
+    <p style="font-size: 1.2rem; margin-top: 30px; opacity: 0.9;">
+      Transformando datos en insights valiosos para el negocio
+    </p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="card">
+      <h2><span class="icon">👤</span> Perfil Profesional</h2>
+      <p>Tecnólogo en Sistematización de Datos y estudiante de Ingeniería en Telemática (último semestre) con experiencia en análisis de datos, desarrollo de reportes, automatización de procesos y creación de dashboards en Power BI y Qlik.</p>
+      <p>Manejo de Python, SQL, Git y desarrollo web con Django, incluyendo aplicaciones para web scraping y gestión de datos.</p>
+      <p>Experiencia en el uso de modelos de lenguaje (LLMs) con Ollama y Llama 2B para clasificación de información. Me caracterizo por habilidades en comunicación asertiva, trabajo en equipo, adaptabilidad y resolución de problemas, orientado siempre a la mejora continua y a la optimización de procesos con soluciones basadas en datos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <div class="card">
+      <h2><span class="icon">💻</span> Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-item" (click)="openProject('https://drive.google.com/drive/folders/1qC6at_miVL7BZmUDfgr1u4kYHsRMJ9hL?usp=drive_link')">
+          <img src="assets/img/Python.png" alt="Python">
+          <h3>Python</h3>
+          <p>Proyectos de análisis de datos y automatización</p>
         </div>
-    </footer>
-</body>
-</html>
+        <div class="project-item" (click)="openProject('https://1drv.ms/f/s!Arj2TaZpXgohiX724MXSvdD9fFSB?e=RSY1eF')">
+          <img src="assets/img/Power_BI.png" alt="Power BI">
+          <h3>Power BI</h3>
+          <p>Dashboards y reportes interactivos</p>
+        </div>
+        <div class="project-item" (click)="openProject('https://github.com/EstebanDuque123')">
+          <img src="assets/img/github.png" alt="GitHub">
+          <h3>GitHub</h3>
+          <p>Repositorios de código y proyectos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+  <div class="container">
+    <div class="card">
+      <h2><span class="icon">💼</span> Experiencia</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Analista de Medios</h3>
+          <p class="job-company">Infolaft SAS</p>
+          <p class="job-period">Noviembre 2024 - Actualidad</p>
+          <p>• Extracción y transformación de datos para análisis de listas restrictivas</p>
+          <p>• Generación de reportes e informes especializados para clientes</p>
+          <p>• Desarrollo de aplicación web en Django para automatización</p>
+          <p>• Implementación de clasificador de nombres usando Ollama y Llama 2B</p>
+          <p>• Automatización de procesos con Python y mantenimiento de bases de datos SQL</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Practicante FACISO</h3>
+          <p class="job-company">Universidad de los Andes</p>
+          <p class="job-period">Agosto 2023 - Marzo 2024</p>
+          <p>Normalización de números antiguos de revistas usando InDesign y marcación de revista para repositorio Scielo usando etiquetas XML.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Practicante Área de Medición</h3>
+          <p class="job-company">Frontera Energy</p>
+          <p class="job-period">Agosto 2020 - Febrero 2021</p>
+          <p>Consolidación y actualización de información de medición desde distintos campos, manteniendo carpetas compartidas y archivos del área con seguimiento mensual constante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<footer id="contact">
+  <div class="container">
+    <h2 class="color-primary mb-20"><span class="icon">📧</span> Contáctame</h2>
+    <p><strong>Email:</strong> Esteban_duque159&#64;hotmail.com</p>
+    <p><strong>Celular:</strong> +57 311 814 4673</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/javier-duque-g/" target="_blank">
+        in
+      </a>
+      <a href="https://github.com/EstebanDuque123" target="_blank">
+        gh
+      </a>
+      <a href="mailto:Esteban_duque159&#64;hotmail.com">
+        &#64;
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<a href="#home" class="scroll-top" id="scrollTop">
+  ↑
+</a>
